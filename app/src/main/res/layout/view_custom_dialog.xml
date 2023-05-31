@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:background="#192532"
+    android:layout_height="wrap_content">
+<!--  BACKGROUND COLOR ASAL #DFD9D9  #19191E -->
+    <TextView
+        android:id="@+id/titleDialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="23dp"
+        android:background="#0065FF"
+        android:text="ADD TASK"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputTextTask"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTask"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:textSize="11dp"
+                android:hint="Kegiatan" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/ettgl"
+                android:layout_width="200dp"
+                android:singleLine="true"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:hint="YYYY-MM-DD"/>
+            <ImageButton
+                android:id="@+id/date"
+                android:layout_width="50dp"
+                android:src="@drawable/ic_date"
+                android:layout_height="50dp"
+                android:backgroundTint="#144C8F"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/ettime"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:clickable="true"
+                android:backgroundTint="@color/white"
+                android:singleLine="true"
+                android:drawableEnd="@drawable/ic_time"
+                android:drawableRight="@drawable/ic_time"
+                android:focusable="true"
+                android:hint="00:00"/>
+            <!--
+            <Button
+                android:id="@+id/btntime"
+                android:layout_width="50dp"
+                android:drawableLeft="@drawable/clock"
+                android:layout_height="wrap_content"
+                />
+                -->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="cancel"/>
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0054FB"
+            android:text="save"/>
+
+    </LinearLayout>
+</LinearLayout>

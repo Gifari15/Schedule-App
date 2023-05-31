@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="center"
+        android:adjustViewBounds="true"
+        android:text="SELAMAT DATANG"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+            <!--
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wallpaper Sistem "/>
+            -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/btn_wal1"
+                    android:layout_width="100dp"
+                    android:layout_height="200dp" />
+
+                <ImageView
+                    android:id="@+id/btn_wal2"
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="200dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="200dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="200dp" />
+
+
+            </LinearLayout>
+
+            <!--
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/angkasa2"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/angkasa2"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/angkasa2"/>
+
+
+            </LinearLayout>
+        -->
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

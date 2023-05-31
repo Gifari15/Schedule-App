@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#181823"
+    tools:context=".Splash">
+    <!-- WARNA BACKGROUND ASAL = #181823-->
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:background="@drawable/logoo"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginBottom="215dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:text="E-SCHEDULE"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</LinearLayout>
